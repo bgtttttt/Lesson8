@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-family: "Josefin", sans-serif;
+    --content-width: 1167px;
+    --container-offset: 50px;
+    --container-width: calc(var(--content-width) + (var(--container-offset)* 2));
+    --light-color: #fff;
+    --bismark-color: #446381;
+    --apricot-color: #eb8382;
+    --rum-color: #826f8c;
+    --cinderella-color: #fbdacf;
+    --beige-color: #fee9dc;
+    --animation-primary: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url("fonts/JosefinSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url("fonts/JosefinSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: var(--container-width);
+}
+
+body {
+    background-color: #FFD9C3;
+}
+.banner {
+    background-image: url("images/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 864px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    background-image: url("images/logo.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 257px;
+    height: 78px;
+}
+.banner-info {
+    margin-top:40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:30px;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.banner-txt h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 104%;
+    color: #446381;
+}
